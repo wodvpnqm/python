@@ -1,0 +1,74 @@
+[
+	{
+		"commons": 
+		{
+			"source": 
+			{
+				"host": "localhost",
+				"user": "ceshi",
+				"passwd": "ceshi@2015",
+				"db": "test",
+				"port": "3306",
+				"charset": "utf8"
+			},
+
+			"target": 
+			{
+				"host": "localhost",
+				"user": "ceshi",
+				"passwd": "ceshi@2015",
+				"db": "test1",
+				"port": "3306",
+				"charset": "utf8"
+			}
+		},
+
+		"data": 
+		[
+			{
+				"source": "user_t",
+				"target": "user_t",
+				"options": 
+				[
+					{
+						"type": "delColumn",
+						"columnNames": "age"
+					},
+
+					{
+						"type": "addColumn",
+						"columnNames": 
+						[
+							{
+								"column": "grade",
+								"default": "2"
+							}
+						]
+					},
+
+					{
+						"type": "modifyColumn",
+						"columnNames": 
+						[
+							{
+								"source": "col1",
+								"target": "col4"
+							},
+							{
+								"source": "col2",
+								"target": "col5",
+								"tranfer": "date_to_varchar"
+							},
+
+							{
+								"source": "col3",
+								"target": "col6",
+								"tranfer": "varchar_to_date"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]
