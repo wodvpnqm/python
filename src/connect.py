@@ -2,7 +2,7 @@
 import MySQLdb
  
 try:
-    conn = MySQLdb.connect(host='localhost', user='root', passwd='', port=3306, charset='utf8')
+    conn = MySQLdb.connect(host='localhost', user='root', passwd='123', port=3306, charset='utf8')
     cur = conn.cursor()
      
     conn.select_db('zhsq')

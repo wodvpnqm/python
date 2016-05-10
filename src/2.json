@@ -1,0 +1,53 @@
+[
+	{
+		"commons": 
+		{
+			"source": 
+			{
+				"host": "localhost",
+				"user": "ceshi",
+				"passwd": "ceshi@2015",
+				"db": "test",
+				"port": "3306",
+				"charset": "utf8"
+			},
+
+			"target": 
+			{
+				"host": "localhost",
+				"user": "ceshi",
+				"passwd": "ceshi@2015",
+				"db": "test1",
+				"port": "3306",
+				"charset": "utf8"
+			}
+		},
+		"data": 
+		[
+			{
+				"source": "s1",
+				"target": "t1",
+				"options": 
+				[
+					{
+						"type": "delColumn",
+						"columnNames": "col1,col2,col3"
+					},
+
+					{
+						"type": "modifyColumn",
+						"sourceColumns": "col4,col5,col6",
+						"ruls": "fun1,fun2,fun3",
+						"targetColumns":"col4,col5,col6"
+					},
+
+					{
+						"type": "addColumn",
+						"columnNames": "col32,co33,co34",
+						"defaultValues": "val1,val2,val3"
+					}
+				]
+			}
+		]
+	}
+]
