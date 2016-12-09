@@ -1,8 +1,49 @@
 [
-{"type":"addColumn","options":[{"source":"","target":"","columnNames":"col1,col2,col3","defaultValue":"val1,val2,val3"}]},
-{"type":"final","options":{"tables":"tx1,tx2,tx3"}},
-{"type":"tableName","options":{"sources":"s1,s2,s3","targets":"tx1,tx2,tx3"}},
-{"type":"delColumn","options":[{"source":"","target":"","columnNames":"col1,col2,col3"}]},
-{"type":"modifyColumn","options":[{"source":"","target":"","columnNames":"col1,col2,col3","defaultValue":"val1,val2,val3","ruls":"fun1,fun2,fun3"}]}
+	{
+		"type": "addColumn",
+		"options": [
+			{
+				"source": "",
+				"target": "",
+				"columnNames": "col1,col2,col3",
+				"defaultValue": "val1,val2,val3"
+			}
+		]
+	},
+	{
+		"type": "final",
+		"options": {
+			"tables": "tx1,tx2,tx3"
+		}
+	},
+	{
+		"type": "tableName",
+		"options": {
+			"sources": "s1,s2,s3",
+			"targets": "tx1,tx2,tx3"
+		}
+	},
+	{
+		"type": "delColumn",
+		"options": [
+			{
+				"source": "",
+				"target": "",
+				"columnNames": "col1,col2,col3"
+			}
+		]
+	},
+	{
+		"type": "modifyColumn",
+		"options": [
+			{
+				"source": "",
+				"target": "",
+				"columnNames": "col1,col2,col3",
+				"defaultValue": "val1,val2,val3",
+				"ruls": "fun1,fun2,fun3"
+			}
+		]
+	}
 ]
 
